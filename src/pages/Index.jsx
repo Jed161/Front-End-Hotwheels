@@ -1,7 +1,10 @@
-import React from 'react'
+import Hotwheels from '../components/Hotwheels';
 
 export default function Index() {
-  return (
-    <div>Index</div>
-  )
+	return (
+		<div>
+			<h2>Index</h2>
+			<Hotwheels />
+		</div>
+	);
 }
