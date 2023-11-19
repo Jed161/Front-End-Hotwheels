@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+
+import Hotwheel from './Hotwheel';
 
 const API = import.meta.env.VITE_API_URL;
 
@@ -18,13 +21,13 @@ export default function Hotwheels() {
 	}, []);
 
 	return (
-		<div>
-			{hotwheels.map((hotwheel) => (
-				<>
-					<h2>{hotwheel.name}</h2>
-					<img src={hotwheel.img_url} alt={hotwheel.name} width='250' />
-				</>
-			))}
+		<div className='hotwheels'>
+			<h2>Hotwheels</h2>
+			<section>
+				{hotwheels.map((hotwheel) => {
+					return <Hotwheel key={uuidv4()} hotwheel={hotwheel} />;
+				})}
+			</section>
 		</div>
 	);
 }
