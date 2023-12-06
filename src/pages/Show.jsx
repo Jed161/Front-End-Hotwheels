@@ -1,7 +1,12 @@
-import React from 'react'
+import HotwheelDetails from "../Components/HotwheelDetails";
 
-export default function Show() {
+function Show() {
   return (
-    <div>Show</div>
-  )
+    <div className="Show">
+      <h2>Show</h2>
+      <HotwheelDetails />
+    </div>
+  );
 }
+
+export default Show;

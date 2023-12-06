@@ -1,7 +1,12 @@
-import React from 'react'
+import HotwheelEditForm from "../Components/HotwheelEditForm";
 
-export default function Edit() {
+function Edit() {
   return (
-    <div>Edit</div>
-  )
+    <div className="New Edit">
+      <h2>Edit</h2>
+      <HotwheelEditForm />
+    </div>
+  );
 }
+
+export default Edit;

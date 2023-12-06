@@ -1,7 +1,7 @@
-import React from 'react'
-
 export default function FourOFour() {
   return (
-    <div>FourOFour</div>
-  )
+    <div>
+      <h1>Sorry, no page found</h1>
+    </div>
+  );
 }

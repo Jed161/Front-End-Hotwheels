@@ -1,7 +1,12 @@
-import React from 'react'
+import HotwheelNewForm from "../Components/HotwheelNewForm";
 
-export default function New() {
+function New() {
   return (
-    <div>New</div>
-  )
+    <div className="New">
+      <h2>New</h2>
+      <HotwheelNewForm />
+    </div>
+  );
 }
+
+export default New;
