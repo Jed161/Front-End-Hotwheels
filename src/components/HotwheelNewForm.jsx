@@ -105,6 +105,7 @@ function HotwheelNewForm() {
           onChange={handleTextChange}
           placeholder="Describe the car"
         />
+        
         <label htmlFor="isFavorite">Favorite:</label>
         <input
           id="isFavorite"
